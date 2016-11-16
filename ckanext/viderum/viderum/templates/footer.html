@@ -1,0 +1,7 @@
+{% ckan_extends %}
+            {% block footer_links_ckan %}
+              {% set api_url = 'http://docs.ckan.org/en/{0}/api/'.format(g.ckan_doc_version) %}
+              <li><a href='http://viderum.com'>A Viderum service</a></li>
+              <li><a href="{{ api_url }}">{{ _('CKAN API') }}</a></li>
+              <li><a href="http://opendefinition.org/od/2.1/en/">About open data</a></li>
+            {% endblock %}
