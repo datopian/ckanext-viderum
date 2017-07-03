@@ -2,6 +2,7 @@
 {% block secondary_content %}
 
   {% set default_extent_config = h.viderum_get_default_extent() %}
+  <h1>{{ default_extent_config }}</h1>
   {% snippet "spatial/snippets/spatial_query.html", default_extent=default_extent_config %}
 
   {{ super() }}
